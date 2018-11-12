@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+cd /Users/lei.yang/lei-workspace/java/info-threads
+mvn package
+cp /Users/lei.yang/lei-workspace/java/info-threads/target/info-threads-0.0.1-SNAPSHOT.war /Users/lei.yang/Documents/wwwroot/info-api/info-threads-api.war
+java -jar /Users/lei.yang/Documents/wwwroot/info-api/info-threads-api.war
