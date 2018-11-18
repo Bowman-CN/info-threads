@@ -1,2 +1,6 @@
+com/infoservice/init/infothreads/models/PushKeys.class
+com/infoservice/init/infothreads/controller/PushSubsController.class
+com/infoservice/init/infothreads/repos/PushSubsRepository.class
 com/infoservice/init/infothreads/controller/InfosController.class
 com/infoservice/init/infothreads/InfoThreadsApplication.class
+com/infoservice/init/infothreads/models/PushSubscriptions.class
