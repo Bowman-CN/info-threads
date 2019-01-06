@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-cd /Users/lei.yang/lei-workspace/java/info-threads
+cd /Users/lei.yang/lei-workspace/java/info-thread-api
 mvn package
-cp /Users/lei.yang/lei-workspace/java/info-threads/target/info-threads-0.0.1-SNAPSHOT.war /usr/local/var/www/info-api/info-threads-api.war
-java -jar /usr/local/var/www/info-api/info-threads-api.war
+#mvn clean install
+rm /usr/local/var/www/info-api/info-thread-api.war
+cp /Users/lei.yang/lei-workspace/java/info-thread-api/target/info-threads-0.0.1-SNAPSHOT.war /usr/local/var/www/info-api/info-thread-api.war
+java -jar /usr/local/var/www/info-api/info-thread-api.war

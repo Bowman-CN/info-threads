@@ -47,7 +47,7 @@ public class InfosController {
     }
 
     @RequestMapping(value = "/", method = RequestMethod.POST)
-    public InfoStreams createInfo(@Valid @RequestBody InfoStreams info) {
+    public InfoStreams createInfo(@RequestBody InfoStreams info) {
         info.set_id(ObjectId.get());
         repository.save(info);
         return info;

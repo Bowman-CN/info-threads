@@ -11,4 +11,6 @@ public interface PushSubsRepository extends MongoRepository<PushSubscriptions, S
 
     @Override
     public PushSubscriptions insert(PushSubscriptions pushSubscriptions);
+
+    public List<PushSubscriptions> findBykeys_auth(String authStr);
 }
