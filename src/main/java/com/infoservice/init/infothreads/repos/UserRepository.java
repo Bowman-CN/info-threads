@@ -8,7 +8,9 @@ public interface UserRepository extends MongoRepository<UserMetrics, String> {
 
     public UserMetrics findTopBy_id(String id);
 
-    public UserMetrics findByEmail(String mail);
+    public UserMetrics findTopByEmail(String mail);
+
+    public UserMetrics findTopByMobile(String mail);
 
     @Query("{ $or : [ { email:?0 } , { mobile : ?1 } ] }")
     public UserMetrics findTopByMobileOrEmail(String email,String mobile);
